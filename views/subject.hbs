@@ -1,0 +1,32 @@
+<main class="subject">
+    <header>
+        <span>
+            <h1><a href="{{repository.url}}" target="_blank">{{repository.name}}</a></h1>
+            <p>
+                <picture>
+                    <source srcset="/images/forks_icon_lm.svg" media="(prefers-color-scheme: light)">
+                    <img src="/images/forks_icon_dm.svg"/>
+                </picture>{{repository.forkCount}}
+            </p>
+        </span>
+        <p>{{repository.description}}</p>
+    </header>
+
+    <h2>Connected Repositories</h2>
+    <section{{#ifCond uneven true}} class="uneven"{{/ifCond}}>
+        {{#ifCond forks.length 0}}
+            <p>This repository has no forks.</p>
+        {{else}}
+            {{#each forks}}
+                <a href="{{url}}" target="_blank">
+                    <img src="{{owner.avatarUrl}}" alt="{{owner.login}}">
+
+                    <div>
+                        <h4>{{name}}</h4>
+                        <p>{{owner.login}}</p>
+                    </div>
+                </a>
+            {{/each}}
+        {{/ifCond}}
+    </section>
+</main>
