@@ -10,7 +10,7 @@
 ## Live demo
 https://college-poll.herokuapp.com/
 
-Repo Connect is een met GraphQL gemaakte applicatie voor de minor. Met Repo connect worden 2 repositories aan elkaar gelinkt, zodat deze studenten bij elkaar een code review kunnen doen. Per vak van de minor worden er dus random mensen aan elkaar gelinkt, hierdoor geef je niet steeds dezelfde mensen feedback. Vanuit Repo Connect kun je zo door klikken naar iemands repository.
+Repo Connect is een met GraphQL gemaakte applicatie voor de minor. Met Repo Connect worden 2 repositories aan elkaar gelinkt, zodat deze studenten bij elkaar een code review kunnen doen. Per vak van de minor worden er dus random mensen aan elkaar gelinkt, hierdoor geef je niet steeds dezelfde mensen feedback. Vanuit Repo Connect kun je zo door klikken naar iemands repository.
 
 ## Installation
 Clone deze repository naar jouw lokale folder:
